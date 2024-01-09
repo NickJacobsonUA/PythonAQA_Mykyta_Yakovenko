@@ -37,8 +37,8 @@ calc = 1000 / dollar_rate
 
 r_calc = round(calc, 2)
 
-print(f'The current US Dollar exchange rate = {r_calc}')
-print(f'The current US Dollar exchange rate = {r_calc}')
+print(f'The current US Dollar exchange rate = {dollar_rate} per $1')
+print(f'The amount of US Dollar for 1000 grn is = ${r_calc}')
 
 
 
