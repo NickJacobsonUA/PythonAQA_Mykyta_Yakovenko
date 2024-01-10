@@ -30,7 +30,7 @@ last_name = 'Mykyta'
 first_name = "Yakovenko"
 full_name = '\t'+first_name+' '+last_name
 #print(full_name)
-print('students:\nOlha \nVolodymyr')
+#print('students:\nOlha \nVolodymyr')
 
 # deleting spaces - strip()
 
@@ -51,8 +51,8 @@ sentense = 'Python is a very bad language'
 #print(sentense.find('bad'))
 #print(len(sentense))
 
-#splitted_string = sentense.split('a',1) #place and index
-#print(splitted_string)
+splitted_string = sentense.split('', 1) #place and index
+print(splitted_string)
 
 lines_example = 'a\n b\n c'
 #print(lines_example.splitlines())
