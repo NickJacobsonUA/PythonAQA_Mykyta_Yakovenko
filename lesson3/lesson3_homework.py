@@ -44,21 +44,28 @@ import random
 
 x = float(input("Enter X: "))
 y = float(input("Enter Y: "))
-print(type(x), x)
-if x < 0:
-    print('True')
 
 if x > 0:
     if y > 0:
         print(f'The Coordinates {x} and {y} are in 1st quarter')
     elif y < 0:
         print(f'The Coordinates {x} and {y} are in 4th quarter')
+    elif y == 0:
+        print('The coordinate is on the Y line')
+elif x < 0:
+    if y < 0:
+        print(f'The Coordinates {x} and {y} are in 3rd quarter')
+    elif y > 0:
+        print(f'The Coordinates {x} and {y} are in 2nd quarter')
 else:
-    if x < 0:
-        if y <0:
-            print(f'The Coordinates {x} and {y} are in 3rd quarter')
-        elif y > 0:
-            print(f'The Coordinates {x} and {y} are in 2nd quarter')
+    if x == 0:
+        if y != 0:
+            print('The coordinate is on the X line')
+        elif y == 0:
+            print('The both coordinates are 0')
+
+
+
 
 
 
