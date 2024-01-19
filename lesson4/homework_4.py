@@ -4,22 +4,25 @@ while True:
     entered = input('Add a note: ')
     if entered == 'latest':
         print(entered_words)
-        break
+        continue
 
     elif entered == 'earliest':
         reverse = reversed(entered_words)
         print(list(reverse))
-        break
+        continue
 
-    elif entered == 'short':
-        words = sorted(entered_words, key=len)
-        break
+    elif entered == 'shortest':
+        print(sorted(entered_words, key=len))
+        continue
+
     elif entered == 'longest':
         print(sorted(entered_words, key = len, reverse=True))
-        break
+        continue
+
     elif entered == 'exit':
-        print('Bye - bye')
+        print('Bye bye')
         break
+
     else:
         entered_words.append(entered)
 
