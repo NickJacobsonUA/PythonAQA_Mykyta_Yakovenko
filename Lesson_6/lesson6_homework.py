@@ -67,8 +67,10 @@ def add_people_to_dict():
         'Name': random_name,
         'Surname': random_surname,
         'Location': random_location
+
     })
+    print(dict_people)
 
 
 add_people_to_dict()
-print(dict_people)
+
